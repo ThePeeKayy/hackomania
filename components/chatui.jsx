@@ -40,18 +40,19 @@ function ChatPage({ setChatOpen }) {
     setInputValue('')
     setMessages(sendMessage)
     try {
-      const response = await fetch('http://127.0.0.1:8080/chatbot', {
-        method: 'POST',
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          messages: sendMessage
-        })
+      // const response = await fetch('http://127.0.0.1:8080/chatbot', {
+      //   method: 'POST',
+      //   headers: {
+      //     "Content-Type": "application/json"
+      //   },
+      //   body: JSON.stringify({
+      //     messages: sendMessage
+      //   })
 
 
-      })
-      const finalresponse = await response.json()
+      // })
+      // const finalresponse = await response.json()
+      const finalresponse = {conversations:'Test Message'}
       setMessages(finalresponse.conversations)
       if (messages?.length > 0 && dbchathistory?.length > 0) { setFinalMesssageList([...dbchathistory, ...messages.slice(1)]) } else if (dbchathistory?.length && messages?.length == 0) {
         setFinalMesssageList(dbchathistory)
