@@ -52,7 +52,9 @@ function ChatPage({ setChatOpen }) {
 
       // })
       // const finalresponse = await response.json()
-      const finalresponse = {conversations:'Test Message'}
+      const finalresponse = [{
+        "role": "system", "content": "You are a chatbot for the Singapore Government that answers the questions accurately and succinctly to help businesses with their problems. Instructions: - Only answer questions about Singapore government. - If you are unsure about the question, then reply with 'I am not sure'. Context: - In the services page of our website, it has info about govt services. - In the network page, we can connect with other Singapore businesses."
+      }, { 'role': 'user', 'content': inputValue },{ 'role': 'system', 'content': 'test message' }]
       setMessages(finalresponse.conversations)
       if (messages?.length > 0 && dbchathistory?.length > 0) { setFinalMesssageList([...dbchathistory, ...messages.slice(1)]) } else if (dbchathistory?.length && messages?.length == 0) {
         setFinalMesssageList(dbchathistory)
