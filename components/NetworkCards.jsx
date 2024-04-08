@@ -38,8 +38,8 @@ const NetworkCards = ({ loading, setCreateModal }) => {
     <div className=''>
       <section>
         <div className="">
-          <div className=" w-full flex justify-center px-6 text-gray-500">
-            <div className="mt-12 flex flex-col w-[40vw] gap-3">
+          <div className=" w-full flex justify-center sm:px-6 text-gray-500">
+            <div className="mt-12 flex flex-col sm:w-[40vw] w-[60vw] gap-3">
               {user && <div className=" relative group overflow-hidden py-8 px-4 rounded-xl bg-white border border-gray-200">
                 <div>
                   <div className="relative mr-2">
