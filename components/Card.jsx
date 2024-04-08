@@ -31,7 +31,7 @@ export default function Card() {
   if (serviceList.length > 0) {
 
     return (
-      <div className='space-y-4 max-w-[85vw] sm:max-w-[70vw]'>
+      <div className='space-y-4 max-w-[80vw] sm:max-w-[70vw]'>
         <div className='sm:px-[70px] px-[30px] py-[30px] bg-gray-800 rounded-2xl'>
           <p className='text-xl ml-3  font-bold text-white mb-6'>💲Financial Services</p>
           <ul role="list" className="w-full gap-2 space-y-2 ">
