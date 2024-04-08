@@ -21,12 +21,13 @@ const Nav = () => {
   const [loginData, setLoginData] = useState()
 
   async function signInWithLinkedIn() {
+    const origin = location.origin.endsWith('/') ? location.origin : location.origin + '/';
     const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: 'linkedin_oidc',
+      provider: 'linkedin',
       options: {
-        redirectTo: location.origin + "/"
+        redirectTo: origin
       }
-    })
+    });
   }
 
   async function signOutFromLinkedin() {
