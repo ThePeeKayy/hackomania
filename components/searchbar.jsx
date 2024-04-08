@@ -37,7 +37,7 @@ export default function SearchComponent() {
     }
     // update URL 
     replace(`${pathname}?${params.toString()}`)
-  }, 600)
+  }, 200)
 
   useEffect(() => {
     const getResults = async (queryTerm) => {
