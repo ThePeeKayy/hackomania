@@ -32,7 +32,7 @@ export default function Card() {
 
     return (
       <div className='space-y-4 max-w-[80vw] sm:max-w-[70vw]'>
-        <div className='sm:px-[70px] py-[30px] bg-gray-800 rounded-2xl'>
+        <div className='sm:px-[70px] px-[30px] py-[30px] bg-gray-800 rounded-2xl'>
           <p className='text-xl ml-3  font-bold text-white mb-6'>💲Financial Services</p>
           <ul role="list" className="w-full gap-2 space-y-2 ">
             {serviceList.map((service, i) =>
@@ -50,7 +50,7 @@ export default function Card() {
             )}
           </ul>
         </div>
-        <div className='sm:px-[70px] py-[30px] py-[30px] bg-gray-800 rounded-2xl'>
+        <div className='sm:px-[70px] px-[30px] py-[30px] bg-gray-800 rounded-2xl'>
           <p className='text-xl ml-3 font-bold text-white mb-6'>💪🏻Manpower Services</p>
           <ul role="list" className="w-full gap-2 space-y-2 ">
             {serviceList.map((service, i) =>
@@ -68,7 +68,7 @@ export default function Card() {
             )}
           </ul>
         </div>
-        <div className='sm:px-[70px] py-[30px] py-[30px] bg-gray-800 rounded-2xl'>
+        <div className='sm:px-[70px] px-[30px] py-[30px] bg-gray-800 rounded-2xl'>
           <p className='text-xl ml-3 font-bold text-white mb-6'>🏢 Infrastructure Services</p>
           <div role="list" className="w-full gap-2 space-y-2 ">
             {serviceList.map((service, i) =>
