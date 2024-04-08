@@ -12,7 +12,7 @@ const ProfilePosts = ({ user_id }) => {
       setPosts(fetchedPosts)
     }
     getPostsForUser()
-  }, [])
+  }, [user_id])
   // remove the comments below after making
   return (
     <div>
