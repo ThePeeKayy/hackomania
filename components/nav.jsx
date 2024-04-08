@@ -23,7 +23,7 @@ const Nav = () => {
   async function signInWithLinkedIn() {
     const origin = location.origin.endsWith('/') ? location.origin : location.origin + '/';
     const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: 'linkedin',
+      provider: 'linkedin_oidc',
       options: {
         redirectTo: origin
       }
