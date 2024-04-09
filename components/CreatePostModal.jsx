@@ -96,7 +96,6 @@ const CreatePostModal = ({ setLoading, title, setTitle, desc, setDesc, imgUrls, 
                     <input id='uploadFile' type='file' className='hidden' onChange={handleFileUpload} />
 
                     <IoMdSend size={32} className='flex right-0' onClick={(title && desc) ? () => {
-                        console.log(title, desc, imgUrls, user.session.user.id, selectedTags, user.session.user.user_metadata.picture, user.session.user.user_metadata.name)
                         createNetworkPost(title, desc, imgUrls, user.session.user.id, selectedTags, user.session.user.user_metadata.picture, user.session.user.user_metadata.name)
                         setCreateModal(false)
                         setLoading((prev) => !prev)
